@@ -3,7 +3,7 @@ name = "tomlc17"
 version = "latest"
 
 [source]
-git = "https://github.com/tomlc17"
+git = "https://github.com/cktan/tomlc17"
 
 [build]
 system = "none"
