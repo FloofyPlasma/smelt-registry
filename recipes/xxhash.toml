@@ -1,0 +1,15 @@
+[package]
+name = "xxhash"
+version = "latest"
+
+[source]
+git = "https://github.com/C7an4973/xxHash"
+
+[build]
+system = "none"
+
+[output]
+include = "."
+
+[files]
+copy = ["xxhash.h", "xxhash.c"]

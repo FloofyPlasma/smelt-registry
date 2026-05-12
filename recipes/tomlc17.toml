@@ -1,0 +1,15 @@
+[package]
+name = "tomlc17"
+version = "latest"
+
+[source]
+git = "https://github.com/tomlc17"
+
+[build]
+system = "none"
+
+[output]
+include = "src"
+
+[files]
+copy = ["src/tomlc17.c", "src/tomlc17.h"]
