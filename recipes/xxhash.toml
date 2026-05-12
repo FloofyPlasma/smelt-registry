@@ -3,7 +3,7 @@ name = "xxhash"
 version = "latest"
 
 [source]
-git = "https://github.com/C7an4973/xxHash"
+git = "https://github.com/cyan4973/xxHash"
 
 [build]
 system = "none"
