@@ -1,0 +1,19 @@
+[package]
+name = "ya_getopt"
+version = "1.0.0"
+
+[source]
+git = "https://github.com/FloofyPlasma/ya_getopt"
+tag = "v1.0.0"
+
+[interface]
+includes = ["."]
+
+[files]
+base = ["ya_getopt.c", "ya_getopt.h"]
+
+[link.linux]
+flags = []
+
+[link.macos]
+flags = []
