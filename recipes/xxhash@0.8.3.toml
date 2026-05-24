@@ -1,0 +1,19 @@
+[package]
+name = "xxhash"
+version = "0.8.3"
+
+[source]
+git = "https://github.com/Cyan4973/xxHash"
+tag = "v0.8.3"
+
+[interface]
+includes = ["."]
+
+[files]
+base = ["xxhash.c", "xxhash.h"]
+
+[link.linux]
+flags = []
+
+[link.macos]
+flags = []
