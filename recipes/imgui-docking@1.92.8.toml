@@ -1,0 +1,42 @@
+[package]
+name = "imgui-docking"
+version = "1.92.8"
+
+[source]
+git = "https://github.com/ocornut/imgui"
+tag = "v1.92.8-docking"
+
+[interface]
+includes = ["."]
+
+[build]
+private_includes = ["backends"]
+
+[files]
+base = [
+  "imgui.cpp",
+  "imgui_demo.cpp",
+  "imgui_draw.cpp",
+  "imgui_tables.cpp",
+  "imgui_widgets.cpp",
+]
+
+[files.platform]
+linux = []
+macos = []
+
+[link.linux]
+flags = []
+
+[link.macos]
+flags = []
+
+[features]
+
+[features.backend_sdl3]
+files = ["backends/imgui_impl_sdl3.cpp"]
+requires = []
+
+[features.backend_vulkan]
+files = ["backends/imgui_impl_vulkan.cpp"]
+requires = []
