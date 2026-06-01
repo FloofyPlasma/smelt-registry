@@ -1,0 +1,26 @@
+[package]
+name = "simdjson"
+version = "3.12.3"
+
+[source]
+git = "https://github.com/simdjson/simdjson"
+tag = "v3.12.3"
+
+[interface]
+includes = ["singleheader"]
+
+[build]
+private_includes = ["singleheader"]
+
+[files]
+base = ["singleheader/simdjson.cpp"]
+
+[files.platform]
+linux = []
+macos = []
+
+[link.linux]
+flags = []
+
+[link.macos]
+flags = []
