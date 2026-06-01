@@ -7,7 +7,7 @@ git = "https://github.com/ocornut/imgui"
 tag = "v1.92.8-docking"
 
 [interface]
-includes = ["."]
+includes = [".", "backends"]
 
 [build]
 private_includes = ["backends"]
