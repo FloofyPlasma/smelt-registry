@@ -1,0 +1,17 @@
+[package]
+name = "glm"
+version = "1.0.3"
+
+[source]
+git = "https://github.com/g-truc/glm"
+tag = "1.0.3"
+
+[interface]
+includes = ["."]
+
+[files]
+base = []
+
+[files.platform]
+linux = []
+macos = []
