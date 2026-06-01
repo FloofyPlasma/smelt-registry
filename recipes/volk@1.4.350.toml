@@ -1,0 +1,23 @@
+[package]
+name = "volk"
+version = "1.4.350"
+
+[source]
+git = "https://github.com/zeux/volk"
+tag = "1.4.350"
+
+[interface]
+includes = ["."]
+
+[files]
+base = ["volk.c"]
+
+[files.platform]
+linux = []
+macos = []
+
+[link.linux]
+flags = ["-ldl"]
+
+[link.macos]
+flags = []
