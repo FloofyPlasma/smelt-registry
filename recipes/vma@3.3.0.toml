@@ -1,0 +1,26 @@
+[package]
+name = "vma"
+version = "3.3.0"
+
+[source]
+git = "https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator"
+tag = "v3.3.0"
+
+[interface]
+includes = ["include"]
+
+[build]
+private_includes = ["src"]
+
+[files]
+base = ["src/VmaUsage.cpp"]
+
+[files.platform]
+linux = []
+macos = []
+
+[link.linux]
+flags = []
+
+[link.macos]
+flags = []
