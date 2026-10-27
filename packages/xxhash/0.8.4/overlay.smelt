@@ -1,0 +1,11 @@
+project "xxhash" {
+  version = "0.8.4";
+}
+
+target "xxhash" {
+  type = static_lib;
+  export = true;
+  source_dir = ".";
+  files = ["xxhash.c"];
+  public_includes = ["."];
+}
