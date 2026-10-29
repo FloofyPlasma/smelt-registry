@@ -14,6 +14,7 @@ dependency "gl" {
 target "raylib" {
   type = static_lib;
   export = true;
+  warnings = "none";
   source_dir = "src";
   files = ["rcore.c", "rshapes.c", "rtextures.c", "rtext.c", "rmodels.c", "raudio.c", "rglfw.c"];
   public_includes = ["src"];
