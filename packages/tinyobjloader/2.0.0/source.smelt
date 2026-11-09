@@ -1,0 +1,5 @@
+// upstream 2.0.0-rc.13
+source "tinyobjloader" {
+  git = "https://github.com/tinyobjloader/tinyobjloader";
+  commit = "45636bdcef1a4fec140346b90c0b50bf0bc3e23b";
+}
