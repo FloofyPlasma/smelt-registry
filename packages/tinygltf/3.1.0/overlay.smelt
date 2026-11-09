@@ -1,0 +1,13 @@
+project "tinygltf" {
+  version = "3.1.0";
+  c_std = 11;
+}
+
+target "tinygltf" {
+  type = static_lib;
+  export = true;
+  warnings = none;
+  source_dir = ".";
+  files = ["tiny_gltf_v3.c"];
+  public_includes = ["."];
+}

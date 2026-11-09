@@ -1,0 +1,5 @@
+// upstream tag: v3.1.0
+source "tinygltf" {
+  git = "https://github.com/syoyo/tinygltf";
+  commit = "97789b346ed792f413b9520c80bb479f3b63368f";
+}
