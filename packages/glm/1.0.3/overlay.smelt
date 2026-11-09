@@ -1,0 +1,13 @@
+project "glm" {
+  version = "1.0.3";
+  cxx_std = 20;
+}
+
+target "glm" {
+  type = static_lib;
+  export = true;
+  warnings = none;
+  source_dir = "glm";
+  public_includes = ["glm"];
+  defines = ["GLM_FORCE_CXX20"];
+}

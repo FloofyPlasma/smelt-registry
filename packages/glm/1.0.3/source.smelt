@@ -1,0 +1,5 @@
+// upstream tag 1.0.3
+source "glm" {
+  git = "https://github.com/g-truc/glm";
+  commit = "8d1fd52e5ab5590e2c81768ace50c72bae28f2ed";
+}
