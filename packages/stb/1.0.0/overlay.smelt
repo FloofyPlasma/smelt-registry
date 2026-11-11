@@ -1,0 +1,11 @@
+project "stb" {
+  version = "1.0.0";
+  c_std = 89;
+}
+
+target "stb" {
+  type = header_only;
+  export = true;
+  source_dir = ".";
+  public_includes = ["."];
+}
