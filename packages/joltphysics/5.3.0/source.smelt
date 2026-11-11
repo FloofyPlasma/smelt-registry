@@ -1,0 +1,5 @@
+// upstream tag v5.3.0
+source "joltphysics" {
+  git = "https://github.com/jrouwe/JoltPhysics";
+  commit = "0373ec0dd762e4bc2f6acdb08371ee84fa23c6db";
+}

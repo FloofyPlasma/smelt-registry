@@ -1,0 +1,13 @@
+project "joltphysics" {
+  version = "5.3.0";
+  cxx_std = 17;
+}
+
+target "joltphysics" {
+  type = static_lib;
+  export = true;
+  warnings = none;
+  source_dir = "Jolt";
+  public_includes = ["."];
+  link = ["-lpthread"];
+}
