@@ -1,0 +1,13 @@
+project "miniaudio" {
+  version = "0.11.22";
+  c_std = 89;
+}
+
+target "miniaudio" {
+  type = static_lib;
+  export = true;
+  source_dir = ".";
+  files = ["miniaudio.c"];
+  public_includes = ["."];
+  link = ["-lm", "-lpthread"];
+}
