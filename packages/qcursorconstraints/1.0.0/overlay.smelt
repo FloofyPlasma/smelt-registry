@@ -1,0 +1,26 @@
+project "qcursorconstraints" {
+  version = "1.0.0";
+  cxx_std = 20;
+}
+
+dependency "wayland-client" {
+  find = pkg_config("wayland-client");
+}
+
+dependency "qt6widgets" {
+  find = pkg_config("Qt6Widgets");
+}
+
+dependency "qt6gui" {
+  find = pkg_config("Qt6Gui");
+}
+
+target "qcursorconstraints" {
+  type = static_lib;
+  export = true;
+  source_dir = ".";
+  files = ["qcursorconstraints.cpp", "platform/generic.cpp", "platform/wayland*"];
+  depends = ["wayland-client", "qt6widgets", "qt6gui"];
+  public_includes = ["."];
+  private_includes = ["/usr/include/qt6/QtGui/6.12.0/QtGui"];
+}
