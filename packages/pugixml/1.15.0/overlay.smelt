@@ -1,0 +1,11 @@
+project "pugixml" {
+  version = "1.15.0";
+  cxx_std = 17;
+}
+
+target "pugixml" {
+  type = static_lib;
+  export = true;
+  source_dir = "src";
+  public_includes = ["src"];
+}
