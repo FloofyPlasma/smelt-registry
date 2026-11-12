@@ -1,0 +1,14 @@
+project "glfw" {
+  version = "3.4.0";
+  c_std = 99;
+}
+
+target "glfw" {
+  type = static_lib;
+  export = true;
+  source_dir = "src";
+  files = ["context.c", "init.c", "input.c", "platform.c", "vulkan.c", "window.c", "egl_context.c", "null_*", "osmesa_context.c", "monitor.c", "posix_*", "x11_*", "xkb_*", "glx_*", "linux_*"];
+  public_includes = ["include"];
+  private_includes = ["src"];
+  defines = ["_GNU_SOURCE=1", "_GLFW_X11"];
+  }
