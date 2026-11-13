@@ -1,0 +1,11 @@
+project "metal-cpp" {
+  version = "27.0.1";
+  cxx_std = 17;
+}
+
+target "metal-cpp" {
+  type = header_only;
+  export = true;
+  source_dir = ".";
+  public_includes = ["."];
+}

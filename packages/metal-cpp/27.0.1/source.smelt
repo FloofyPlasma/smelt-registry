@@ -1,0 +1,5 @@
+// macOS 27.0.1
+source "metal-cpp" {
+  git = "https://github.com/apple/metal-cpp";
+  commit = "8cdde68ae36a636c84cbb48ebcbc8f3b60251ea0";
+}
